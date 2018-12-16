@@ -1,4 +1,4 @@
-# Fractals JS
+# Fractals JS [![HitCount](http://hits.dwyl.io/arnav-t/Fractals-JS.svg)](http://hits.dwyl.io/arnav-t/Fractals-JS)
 ## Interactive fractal explorer made in JavaScript
 ![Screenshot](https://i.imgur.com/d2txdH8.jpg "screenshot")
 ### Features
