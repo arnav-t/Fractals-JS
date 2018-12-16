@@ -1,0 +1,45 @@
+/*
+===============================
+MAIN DEFINITIONS
+===============================
+*/
+
+body {
+	background: linear-gradient(to top right, #09203f, #537895); 
+}
+
+#main-panel {
+	margin: auto;
+	width: 60%;
+	display: flex;
+	flex-flow: column;
+}
+
+#canvas {
+	border: 3px solid silver;
+	width: 100%;
+}
+
+#menu {
+	margin: 0px -20px;
+}
+
+#julia-menu {
+	display: flex;
+}
+
+.in-row {
+	display: flex;
+} 
+
+/*
+===============================
+MOBILE
+===============================
+*/
+
+@media (max-width: 600px) {
+	#main-panel {
+		width: 100%;
+	}		
+}
