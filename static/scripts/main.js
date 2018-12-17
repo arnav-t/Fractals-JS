@@ -1,6 +1,6 @@
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext("2d");
-var w, h, _x, _y, width, height;
+var w, h, _x, _y, __x, __y, width, height;
 var type = 0;
 var zoom = 1.5;
 var imageData;
@@ -45,8 +45,8 @@ canvas.addEventListener('mousedown', function(evt) {
     ctx.stroke();
     ctx.closePath();
 
-	_x = _x - width/2 + (width*_X/(1.0*w));
-	_y = _y - height/2 + (height*_Y/(1.0*h));
+	_x = __x - width/2 + (width*_X/(1.0*w));
+	_y = __y - height/2 + (height*_Y/(1.0*h));
 	$('#prompt').html(`Centered on (${_x.toFixed(3)}, ${_y.toFixed(3)}).`);
 });
 
@@ -80,6 +80,8 @@ function generate() {
 	
 	let iters = parseInt( $('#comp').val() );
 
+	__x = _x;
+	__y = _y;
 	height = 4.0/zoom;
 	width = w*height/h;
 	X = _x + -(w*2.0/h)/zoom;
